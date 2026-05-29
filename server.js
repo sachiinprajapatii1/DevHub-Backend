@@ -17,7 +17,12 @@ const app = express();
 DB();
 
 // MIDDLEWARE
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://your-frontend.vercel.app",
+    credentials: true,
+  })
+)
 app.use(express.json());
 
 // Uploads — images browser mein dikhte hain, baaki sab force download
