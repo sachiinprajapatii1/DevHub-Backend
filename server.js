@@ -19,7 +19,7 @@ DB();
 // MIDDLEWARE
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://dev-hub-frontend-tau.vercel.app"
+  "https://dev-hub-frontend-tys.vercel.app"
 ];
 
 app.use(cors({
